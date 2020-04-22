@@ -5,31 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image gallery</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body id="grad1">
-    <div class="gallery" align="center">
-        <div class="preview" align="center">
-            <img id="preview" src="images/nz_01.jpg" alt=""/>
-            <img id="preview" src="images/nz_02.jpg" alt=""/>
-            <img id="preview" src="images/nz_03.jpg" alt=""/>
-            <img id="preview" src="images/nz_04.jpg" alt=""/>
-            <img id="preview" src="images/nz_05.jpg" alt=""/>
-            <img id="preview" src="images/nz_06.jpg" alt=""/>
-            <img id="preview" src="images/nz_07.jpg" alt=""/>
-            <img id="preview" src="images/nz_08.jpg" alt=""/>
+    <div class="container">
+        <!-- Arrows for the image -->
+        <div id="prv-btn">
+            <span onclick="this.parentElement.style.display='none'" id="prv-btn">
+                <img id="prv-btn" src="images/arrow.svg" alt="">    
+            </span>
+        </div>
+        
+        <!-- Expanded image -->
+        <div class="photo">
+            <img src="images/nz_01.jpeg" alt="">
+    
+            <!-- Image text -->
+            <div class="gray-container" id="imgtext">
+                <h1 id="photo-title">Title</h1>
+                <p id="photo-description">Description</p>
+            </div>
+        </div>
 
-        </div> 
+        <!-- Arrows for the image -->
+        <div id="nxt-btn">
+            <img id="nxt-btn" src="images/arrow.svg" alt="">
+        </div>
 
-        <div class="thumbnails">
-            <img onmouseover="getElementById('preview').src=getElementById('nz_01').src" id="nz_01" src="images/nz_01.jpeg" alt="" />
-            <img onmouseover="getElementById('preview').src=getElementById('nz_02').src" id="nz_02" src="images/nz_02.jpeg" alt="" />
-            <img onmouseover="getElementById('preview').src=getElementById('nz_03').src" id="nz_03" src="images/nz_03.jpeg" alt="" />
-            <img onmouseover="getElementById('preview').src=getElementById('nz_04').src" id="nz_04" src="images/nz_04.jpeg" alt="" />
-            <img onmouseover="getElementById('preview').src=getElementById('nz_05').src" id="nz_05" src="images/nz_05.jpeg" alt="" />
-            <img onmouseover="getElementById('preview').src=getElementById('nz_06').src" id="nz_06" src="images/nz_06.jpeg" alt="" />
-            <img onmouseover="getElementById('preview').src=getElementById('nz_07').src" id="nz_07" src="images/nz_07.jpeg" alt="" />
-            <img onmouseover="getElementById('preview').src=getElementById('nz_08').src" id="nz_08" src="images/nz_08.jpeg" alt="" />
     </div>
+      
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts.js"></script> 
 </body>
