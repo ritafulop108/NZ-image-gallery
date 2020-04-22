@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    
   }
   
   body {
@@ -8,6 +9,7 @@
     margin-right: auto;
     margin-top: 200px;
     font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(to right, rgb(192, 191, 191), rgb(212, 211, 211), white, rgb(192, 191, 191), rgb(212, 211, 211)); 
   }
 
 /* #grad1 {
@@ -22,9 +24,10 @@
     height: 400px;
     position: relative;
     display: flex;
-    border: black solid 2px;
     align-items: center;
     justify-content: space-around;
+    box-shadow: 1px 4px 3px 3px rgba(128, 128, 128, 0.5);
+    background-color: white;
 }
 
 
@@ -47,7 +50,8 @@ img {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 26px;
+    margin-bottom: 0px;
 }
 
 #imgtext {
@@ -56,8 +60,8 @@ h1 {
     height: 150px;
     bottom: 0px;
     color: white;
-    font-size: 18px;
+    font-size: 14px;
     background-color: rgba(0, 0, 0, 0.658);
     text-align: left;
-    padding: 15px;
+    padding: 20px;
   }
