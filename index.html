@@ -10,26 +10,30 @@
 <body id="grad1">
     <div class="container">
         <!-- Arrows for the image -->
-        <div id="prv-btn">
-            <span onclick="this.parentElement.style.display='none'" id="prv-btn">
-                <img id="prv-btn" src="images/arrow.svg" alt="">    
-            </span>
+        <div id="left-arrow">
+            <!-- <span onclick="this.parentElement.style.display='none'" id="left-arrow"> -->
+                <img id="left-arrow" src="images/arrow.svg" alt="">    
+            <!-- </span> -->
         </div>
         
         <!-- Expanded image -->
-        <div class="photo">
-            <img src="images/nz_01.jpeg" alt="">
+        <div class="photoContainer" id="current">
+            <img id="photo">
     
             <!-- Image text -->
             <div class="gray-container" id="imgtext">
-                <h1 id="photo-title">Title</h1>
-                <p id="photo-description">Description</p>
+                <h1 id="photo-title"></h1>
+                <p id="photo-description"></p>
             </div>
         </div>
 
         <!-- Arrows for the image -->
-        <div id="nxt-btn">
-            <img id="nxt-btn" src="images/arrow.svg" alt="">
+        <div id="right-arrow">
+            <img id="right-arrow" src="images/arrow.svg" alt="">
+        </div>
+
+        <!-- Thumbnails container -->
+        <div id="thumbnails">
         </div>
 
     </div>

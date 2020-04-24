@@ -31,12 +31,12 @@
 }
 
 
-#prv-btn {
+#left-arrow {
     height: 20px;
     width: fit-content;
 }
 
-#nxt-btn {
+#right-arrow {
     transform: rotate(90deg);
     height: 20px;
     width: fit-content;
